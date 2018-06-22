@@ -26,7 +26,7 @@ int main(void)
 			}
 		}
 		printf("Escreva o texto a ser codificado: ");
-		gets(input);
+		fgets(input,256,stdin);
 		int i = 0;
 		while(input[i] != '\0')
 		{

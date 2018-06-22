@@ -123,7 +123,7 @@ int main()
 {
 	char bits[256];
 	printf("Insira um inteiro: ");
-	gets(bits);
+	scanf("%s%*c",bits);
 	int opcao=0;
 	printf
 	(
