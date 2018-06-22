@@ -45,7 +45,7 @@ int main()
 	char bits[256];
 	printf("Insira o numero em binario: ");
 	fflush(stdin);
-	gets(bits);
+	scanf("%s%*c",bits);
 	int posF=0;
 	while(bits[posF]!='\0')
 	{
