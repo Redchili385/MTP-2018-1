@@ -121,13 +121,10 @@ void Transforme(char bits[],char BaseAnterior[],char BasePosterior[])
 
 int main()
 {
-	char bits[256];
-	printf("Insira um inteiro: ");
-	scanf("%s%*c",bits);
 	int opcao=0;
 	printf
 	(
-		"\n1. Binario para decimal"
+		"1. Binario para decimal"
 		"\n2. Binario para hexadecimal"
 		"\n3. Hexadecimal para Decimal"
 		"\n4. Hexadecimal para Binario"
@@ -139,6 +136,9 @@ int main()
 	);
 	scanf("%d",&opcao);
 	getchar();
+	char bits[256];
+	printf("Insira um inteiro: ");
+	scanf("%s%*c",bits);
 	if(opcao>0 && opcao<9)
 	{
 		if(opcao==1)

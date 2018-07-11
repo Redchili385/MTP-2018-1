@@ -201,9 +201,14 @@ void menu(struct Produto* iniciolista, int* quantidade)
 
 int main()
 {
-	struct Produto* iniciolista = malloc(0);
+	struct Produto* iniciolista = NULL;     //malloc(0);
 	int quantidade = 0;
 	menu(iniciolista, &quantidade);
-	free(iniciolista);
+	if (iniciolista)
+	{
+		printf("iniciolista: %d",iniciolista);
+		free(iniciolista);
+	}
+	printf("\n%d",iniciolista);
 	return 0;
 }
