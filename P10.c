@@ -206,9 +206,7 @@ int main()
 	menu(iniciolista, &quantidade);
 	if (iniciolista)
 	{
-		printf("iniciolista: %d",iniciolista);
 		free(iniciolista);
 	}
-	printf("\n%d",iniciolista);
 	return 0;
 }
